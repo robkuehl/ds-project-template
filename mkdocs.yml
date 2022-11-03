@@ -1,13 +1,27 @@
 site_name: My Docs
 
 theme:
-  name: "material"
+    name: "material"
+    features:
+        - navigation.tabs
 
 plugins:
-  - search
-  - mkdocstrings
+    - search
+    - mkdocstrings:
+          # custom_templates: templates
+          default_handler: python
+          handlers:
+              python:
+                  options:
+                      show_source: false
 
 markdown_extensions:
-  - admonition
-  - codehilite
-  - mkautodoc
+    - admonition
+    - codehilite
+
+nav:
+    - Home: mkdocs/index.md
+    - Readme: readme.md
+    - Modules: mkdocs/modules.md
+    - Contribution: mkdocs/contribution.md
+    - Changelog: mkdocs/changelog.md

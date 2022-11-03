@@ -1,0 +1,21 @@
+.git/
+.vscode/
+
+data/
+models/
+
+build
+dist
+*.egg-info
+*.egg/
+*.pyc
+*.swp
+*.ipynb
+
+.tox
+.coverage
+html/*
+__pycache__
+
+# Compiled Documentation
+docs/_build
