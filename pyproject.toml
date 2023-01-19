@@ -7,7 +7,6 @@ authors = ["Robin Kühling <rbnkhlng.dev@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.10"
 loguru = "^0.6.0"
-typer = {extras = ["all"], version = "^0.6.1"}
 python-dotenv = "^0.21.0"
 
 [tool.poetry.dev-dependencies]
